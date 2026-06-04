@@ -45,7 +45,7 @@ def split_and_scale_data(df):
     print(f"Training features shape: {X_train_scaled.shape}")
     print(f"Testing features shape: {X_test_scaled.shape}")
     
-    return X_train_scaled, X_test_scaled, y_train, y_test
+    return X_train_scaled, X_test_scaled, y_train, y_test,scaler
 
 if __name__ == "__main__":
     DATA_PATH = "WA_Fn-UseC_-Telco-Customer-Churn.csv"
